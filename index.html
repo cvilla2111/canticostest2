@@ -29,7 +29,7 @@
         }
 
         header {
-            padding: 24px 16px;
+            padding: 16px 16px;
             border-bottom: 1px solid var(--border-color);
             position: sticky;
             top: 0;
@@ -52,13 +52,13 @@
         }
 
         .search-container {
-            margin-bottom: 20px;
+            margin-bottom: 16px;
             position: relative;
         }
 
         .search-input {
             width: 100%;
-            padding: 12px 16px;
+            padding: 10px 16px;
             font-size: 16px;
             border: 1px solid var(--border-color);
             border-radius: 10px;
@@ -72,7 +72,7 @@
         }
 
         .accordion-item {
-            margin-bottom: 16px;
+            margin-bottom: 8px; /* Reduced from 16px */
             border-radius: 10px;
             overflow: hidden;
             border: 1px solid var(--border-color);
@@ -80,7 +80,7 @@
         }
 
         .accordion-header {
-            padding: 16px;
+            padding: 12px 16px; /* Reduced from 16px */
             display: flex;
             justify-content: flex-start;
             align-items: center;
@@ -89,14 +89,14 @@
         }
         
         .play-button {
-            width: 30px;
-            height: 30px;
+            width: 26px; /* Reduced from 30px */
+            height: 26px; /* Reduced from 30px */
             border-radius: 50%;
             border: 2px solid var(--text-color);
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-right: 12px;
+            margin-right: 10px; /* Reduced from 12px */
             flex-shrink: 0;
             cursor: pointer;
             position: relative;
@@ -110,14 +110,14 @@
         
         .play-icon {
             border-style: solid;
-            border-width: 8px 0 8px 12px;
+            border-width: 7px 0 7px 10px; /* Reduced size */
             border-color: transparent transparent transparent var(--text-color);
             margin-left: 2px;
         }
         
         .pause-icon {
-            width: 10px;
-            height: 14px;
+            width: 8px; /* Reduced from 10px */
+            height: 12px; /* Reduced from 14px */
             opacity: 0;
             position: relative;
         }
@@ -126,12 +126,12 @@
             content: '';
             position: absolute;
             background-color: var(--text-color);
-            width: 4px;
-            height: 14px;
+            width: 3px; /* Reduced from 4px */
+            height: 12px; /* Reduced from 14px */
         }
         
         .pause-icon:after {
-            left: 6px;
+            left: 5px; /* Reduced from 6px */
         }
         
         .play-button.playing {
@@ -151,7 +151,7 @@
         }
 
         .accordion-header h2 {
-            font-size: 17px;
+            font-size: 16px; /* Reduced from 17px */
             font-weight: 500;
         }
 
@@ -159,13 +159,13 @@
             max-height: 0;
             overflow: hidden;
             transition: max-height var(--transition-speed), padding var(--transition-speed);
-            font-size: 15px;
+            font-size: 14px; /* Reduced from 15px */
             padding: 0 16px;
         }
 
         .accordion-item.active .accordion-content {
             max-height: 500px;
-            padding: 16px;
+            padding: 12px 16px; /* Reduced from 16px */
             border-top: 1px solid var(--border-color);
         }
 
@@ -175,19 +175,19 @@
 
         @media (max-width: 480px) {
             header {
-                padding: 16px 12px;
+                padding: 12px; /* Reduced padding */
             }
 
             h1 {
-                font-size: 22px;
+                font-size: 20px; /* Reduced from 22px */
             }
 
             .accordion-header h2 {
-                font-size: 16px;
+                font-size: 15px; /* Reduced from 16px */
             }
 
             .accordion-content {
-                font-size: 14px;
+                font-size: 13px; /* Reduced from 14px */
             }
         }
     </style>
